@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --big-shoulders: "Big Shoulders Display", cursive;
+    --lexend: "Lexend Deca", sans-serif;
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+    
+}
+
+html {
+    font-size: 90%;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 950px;
+    min-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container .box {
+    padding: 3rem;
+
+}
+
+.container .box h1 {
+    color: var(--very-light-gray);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: var(--big-shoulders);
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.container .box p {
+    padding: 2rem 0;
+    font-family:var(--lexend);
+    color: var(--transparent);
+    line-height: 2;
+    font-size: 15px;
+}
+
+.container .box button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: --lexend;
+    background-color: white;
+}
+
+
+
+.container .box-1 {
+    background-color: var(--Bright-orange);
+}
+
+.container .box-2 {
+    background-color: var(--Dark-cyan);
+}
+
+.container .box-3 {
+    background-color: var(--Very-dark-cyan);
+}
+
+.container .box-1 button {
+    color: var(--Bright-orange);
+}
+
+.container .box-1 button:hover {
+    color: white;
+    background-color: var(--Bright-orange);
+    border: 2px solid white;
+    
+}
+
+.container .box-2 button:hover {
+    color: white;
+    background-color: var(--Dark-cyan);
+    border: 2px solid white;
+}
+
+.container .box-3 button:hover {
+    color: white;
+    background-color: var(--Very-dark-cyan);
+    border: 2px solid white;
+   
+}
+
+.container .box-2  button {
+    color: var(--Dark-cyan);
+}
+
+.container .box-3  button {
+    color: var(--Very-dark-cyan);
+}
+
+
+
+
+
+
+
+@media (max-width: 991px){
+
+
+    body {
+        padding: 3rem 5%;
+        
+
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .box {
+
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    .container .box button {
+        margin-top: 0;
+        background-color: white;
+    }
+    
+
+    
+}
